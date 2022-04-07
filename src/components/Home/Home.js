@@ -9,6 +9,8 @@ const Home = () => {
     const [cart, setCart] = useState([])
 
     const handleAddToCart = (selectedItem) => {
+
+
         const exits = cart.find(tshirt => tshirt._id === selectedItem._id)
         if(!exits){
             const newCart = [...cart, selectedItem];
